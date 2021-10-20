@@ -2,46 +2,49 @@
   {
       "id": 0,
       "name": "Homard",
-      "image": "../../App_Resources/iOS/homard@3x.png",
-      "icon": "../../App_Resources/iOS/homardRecette_icon@3x.png",
-      "description-titre": "XXX YYY ZZZ",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+      "image": "../assets/images/homardRecette@3x.png",
+      "icon": "../assets/images/homardRecette_icon.png",
+      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "category": "recettes"
   },
   {
       "id": 1,
       "name": "St jacques",
-      "image": "../../App_Resources/iOS/saintJacques@3x.png",
-      "icon": "../../App_Resources/iOS/saintJacques_icon@3x.png",
-      "description-titre": "XXX YYY ZZZ",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+      "image": "../assets/images/saintJacques@3x.png",
+      "icon": "../assets/images/saintJacques_icon.png",
+      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "category": "recettes"
   },
   {
       "id": 2,
       "name": "Bar",
-      "image": "../../App_Resources/iOS/barRecette@3x.png",
-      "icon": "../../App_Resources/iOS/barRecette_icon@3x.png",
-      "descriptiontitre": "XXX YYY ZZZ",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+      "image": "../assets/images/barRecette@3x.png",
+      "icon": "../assets/images/barRecette_icon.png",
+      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "category": "recettes"
   },
   {
       "id": 3,
       "name": "Tourteau",
-      "image": "../../App_Resources/iOS/tourteau@3x.png",
-      "descriptiontitre": "XXX YYY ZZZ",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+      "image": "../assets/images/tourteau@3x.png",
+      "icon": "../assets/images/poulpe.png",
+      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "category": "recettes"
   },
   {
       "id": 4,
       "name": "Recette",
-      "image": "../../App_Resources/iOS/recette@3x.png",
-      "descriptiontitre": "XXX YYY ZZZ",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+      "image": "../assets/images/recette@3x.png",
+      "icon": "../assets/images/poulpe.png",
+      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "category": "recettes"
   },
   {
     "id": 5,
     "name": "Recette",
-    "image": "../../App_Resources/iOS/recette@3x.png",
-    "descriptiontitre": "XXX YYY ZZZ",
-    "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    "image": "../assets/images/recette@3x.png",
+    "icon": "../assets/images/poulpe.png",
+    "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+    "category": "recettes"
 }
 ]

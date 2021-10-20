@@ -20,12 +20,17 @@ export class RestaurantsPage implements OnInit {
   }
 
   onGoToSelectRestaurant(restau: any){
-    let navigationExtras: NavigationExtras = {
-      state: {
-        produits:restau
-      }
-    };
-    this.router.navigate(['/details-produit'],navigationExtras);
+    if(restau.name === "Devenez partenaire!"){
+      this.router.navigate(['/contact']);      
+    }
+    else{
+      let navigationExtras: NavigationExtras = {
+        state: {
+          produits:restau
+        }
+      };
+      this.router.navigate(['/details-produit'],navigationExtras);
+    }
   }
 }
  

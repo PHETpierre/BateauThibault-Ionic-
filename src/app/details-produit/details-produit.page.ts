@@ -21,4 +21,8 @@ details: any;
   ngOnInit() {
   }
 
+  goBack(){
+    this.router.navigate(['/'+this.details.category]);
+  }
+
 }

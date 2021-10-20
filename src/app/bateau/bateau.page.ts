@@ -20,6 +20,10 @@ export class BateauPage implements OnInit {
   }
 
   onGoToSelectBateau(bateau: any){
+    if(bateau.name === "Contact"){
+      this.router.navigate(['/contact']);      
+    }
+    else{
     let navigationExtras: NavigationExtras = {
       state: {
         produits:bateau
@@ -27,5 +31,6 @@ export class BateauPage implements OnInit {
     };
     this.router.navigate(['/details-produit'],navigationExtras);
   }
+}
 
 }

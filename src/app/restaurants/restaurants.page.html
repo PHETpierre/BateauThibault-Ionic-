@@ -1,10 +1,15 @@
-<app-header title="Restaurants Partenaire"></app-header>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-header title="Restaurants Partenaire"></app-header>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col class="ion-text-center">
         <div>
-          <p>Tous les eaux mènent à Thibault.</p>
+          <p>Tous les restaurants partenaires avec le bateau de Thibault.</p>
           <p>06.63.99.99.78</p>
           <p>lebateaudethibault@gmail.com</p>
           <p>www.facebook.com/lebateaudethibault</p>
@@ -15,9 +20,9 @@
       <ion-col>
         <ion-row>
           <ion-col size=6 *ngFor="let item of restauData">
-            <button ion-button (click)="onGoToSelectRestaurant(item)">
+            <ion-button ion-button class="catMenuBtn" expand="full" size="large" color="primary" (click)="onGoToSelectRestaurant(item)">
               {{ item.name }}
-            </button>
+            </ion-button>
           </ion-col>
         </ion-row>
       </ion-col>

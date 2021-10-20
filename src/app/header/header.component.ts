@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   @Input() title: string;
+  @Input() category: string;
 
   constructor(private router: Router) { }
 
@@ -15,7 +16,6 @@ export class HeaderComponent implements OnInit {
 
   goHome(){
     this.router.navigate(['/home']);
-
   }
 
 }

@@ -1,8 +1,12 @@
-<app-header title="Bateau"></app-header>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-header title="Bateau"></app-header>
+  </ion-toolbar>
+</ion-header>
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col class="ion-text-center">
         <div>
           <p>Tous les eaux mènent à Thibault.</p>
           <p>06.63.99.99.78</p>
@@ -15,9 +19,10 @@
       <ion-col>
         <ion-row>
           <ion-col size=6 *ngFor="let item of bateauData">
-            <button ion-button (click)="onGoToSelectBateau(item)">
+            <ion-button ion-button class="catMenuBtn" expand="full" size="large" color="primary" (click)="onGoToSelectBateau(item)">
+              <ion-img class="iconMenu" src="{{item.icon}}"></ion-img>
               {{ item.name }}
-            </button>
+            </ion-button>
           </ion-col>
         </ion-row>
       </ion-col>

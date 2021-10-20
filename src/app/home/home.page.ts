@@ -11,20 +11,25 @@ export class HomePage {
   lienList = [
     {
       name: "Bateaux",
-      lien: "bateau"
+      lien: "bateau",
+      icon: "../assets/images/ancre.png",
     },
     {
     name: "Restaurants",
-    lien: "restaurants"
+    lien: "restaurants",
+    icon: "../assets/images/restaurant.png",
+
     },
     {
       name:"Recettes",
-      lien :"recettes"
+      lien :"recettes",
+      icon: "../assets/images/recette.png",
     },
     {
       name: "Contact",
-      lien: "contact"
-    }
+      lien: "contact",
+      icon: "../assets/images/tourteau.png",
+      }
   ];
 
   constructor(private router: Router) { }

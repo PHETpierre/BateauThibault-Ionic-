@@ -25,3 +25,25 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+body {
+    background: url(./assets/images/background.png) no-repeat center/cover fixed;
+  }
+
+  ion-content {
+    --background: none;
+  }
+
+  .menuBtn{
+    font-size: 11pt;
+    height: 60px;
+  }
+
+  .catMenuBtn{
+    font-size: 10pt;
+    height: 60px;
+  }
+
+  .iconMenu{
+      max-width: 37px;
+      margin-right: 10px;
+  }
