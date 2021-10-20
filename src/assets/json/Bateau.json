@@ -12,7 +12,7 @@
 		"image": "../assets/images/saphir@3x.png",
         "icon": "../assets/images/deLaBrise_icon.png",
 		"name": "Saphir",
-		"description-titre": "XXX YYY ZZZ",
+		"descriptiontitre": "XXX YYY ZZZ",
         "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
 
 	},
@@ -21,7 +21,7 @@
 		"image": "require('../../App_Resources/iOS/gastMicher@3x.png')",
         "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
 		"name": "Gast Micher",
-		"description-titre": "XXX YYY ZZZ",
+		"descriptiontitre": "XXX YYY ZZZ",
         "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
 
 	},
@@ -30,7 +30,7 @@
 		"image": "require('../../App_Resources/iOS/aquilon@3x.png')",
         "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
 		"name": "Aquilon",
-		"description-titre": "XXX YYY ZZZ",
+		"descriptiontitre": "XXX YYY ZZZ",
         "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
 
 	},
@@ -39,7 +39,7 @@
 		"image": "require('../../App_Resources/iOS/aquilon@3x.png')",
         "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
 		"name": "Contact",
-		"description-titre": "XXX YYY ZZZ",
+		"descriptiontitre": "XXX YYY ZZZ",
         "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
 
 	},
