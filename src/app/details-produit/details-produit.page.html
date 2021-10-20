@@ -1,0 +1,26 @@
+<app-header title={{details.name}}></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p>{{ details.name }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="{{ details.image }}"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-row>
+            <p>{{ details.descriptiontitre}}</p>
+        </ion-row>
+        <ion-row>
+          <p>{{ details.description}}</p>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

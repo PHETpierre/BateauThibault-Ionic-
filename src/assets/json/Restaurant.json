@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "name": "Bistrot des Gascons",
+        "image": "../assets/images/desGascons@3x.png",
+        "icon": "../../App_Resources/iOS/desGascons_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    },
+    {
+        "id": 1,
+        "name": "Bistrot Landais",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    },
+    {
+        "id": 2,
+        "name": "Les Fou de L'île",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    },
+    {
+        "id": 3,
+        "name": "Bistrot du Sommelier",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    },
+    {
+        "id": 4,
+        "name": "Villa 9-Trois",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    },
+    {
+        "id": 5,
+        "name": "Devenez partenaire!",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+    }
+]

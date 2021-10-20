@@ -1,0 +1,16 @@
+[
+    {
+    "id": 0,
+    "name": "Bistrot des Gascons",
+    "image": "../../App_Resources/iOS/desGascons@3x.png",
+    "icon": "../../App_Resources/iOS/desGascons_icon@3x.png",
+    "description": "description Bistrot des Gascons"
+},
+    {
+        "id": 1,
+        "name": "Bistrot Landais",
+        "image": "../../App_Resources/iOS/bistrotLandais@3x.png",
+        "icon": "../../App_Resources/iOS/bistrotLandais_icon@3x.png",
+        "description": "description Bistrot Landais"
+    }
+]

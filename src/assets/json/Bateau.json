@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"image": "../assets/images/deLaBrise@3x.png",
+        "icon": "../assets/images/deLaBrise_icon.png",
+		"name": "De la Brise",
+		"descriptiontitre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+	},
+	{
+		"id": 2,
+		"image": "../assets/images/saphir@3x.png",
+        "icon": "../assets/images/deLaBrise_icon.png",
+		"name": "Saphir",
+		"description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+
+	},
+	{
+		"id": 3,
+		"image": "require('../../App_Resources/iOS/gastMicher@3x.png')",
+        "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
+		"name": "Gast Micher",
+		"description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+
+	},
+	{
+		"id": 4,
+		"image": "require('../../App_Resources/iOS/aquilon@3x.png')",
+        "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
+		"name": "Aquilon",
+		"description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+
+	},
+	{
+		"id": 5,
+		"image": "require('../../App_Resources/iOS/aquilon@3x.png')",
+        "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
+		"name": "Contact",
+		"description-titre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+
+	},
+	{
+		"id": 6,
+		"image": "require('../../App_Resources/iOS/aquilon@3x.png')",
+        "icon": "require('../../App_Resources/iOS/deLaBrise_icon.png')",
+		"name": "Contact",
+		"descriptiontitre": "XXX YYY ZZZ",
+        "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!"
+	}
+
+]

@@ -1,0 +1,26 @@
+<app-header title="Bateau"></app-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <p>Tous les eaux mènent à Thibault.</p>
+          <p>06.63.99.99.78</p>
+          <p>lebateaudethibault@gmail.com</p>
+          <p>www.facebook.com/lebateaudethibault</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-row>
+          <ion-col size=6 *ngFor="let item of bateauData">
+            <button ion-button (click)="onGoToSelectBateau(item)">
+              {{ item.name }}
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
