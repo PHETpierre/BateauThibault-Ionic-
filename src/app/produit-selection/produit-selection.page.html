@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding [fullscreen]="true">
   <ion-grid>
     <ion-row>
       <ion-col class="ion-text-start">
@@ -18,11 +18,10 @@
     </ion-row>
   </ion-grid>
   <ion-list padding>
-    <ion-item ion-item *ngFor="let item of details">
-        <ion-button (click)="addToCart(item)">
-          {{item.name}}
+        <ion-button  class="ion-text-start" ion-item color="secondary" *ngFor="let item of details" expand="full" size="large" (click)="addToCart(item)">
+        <ion-img src="../../assets/images/poulpe.png" class="selectProductIcon"></ion-img>
+        {{item.name}}
         </ion-button>
-    </ion-item>
   </ion-list>
 
 </ion-content>

@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding [fullscreen]="true">
   <ion-grid>
   <ion-row>
     <ion-col class="ion-text-center">
@@ -16,18 +16,30 @@
     <ion-item ion-item *ngFor="let item of this.cart" class="cartItem">
       <ion-label>{{ item.produit.name }}</ion-label>
       <ion-label>{{ printPrice(item) }}</ion-label>
-      <ion-select interface="action-sheet" (ionChange)="changeQuantity($event,item.produit)" >
+      <ion-select class="QuantitySelect" interface="action-sheet" (ionChange)="changeQuantity($event,item.produit)" >
         <ion-select-option class="ion-text-center" *ngFor="let itemQuantity of quantityNumber(5)" value="{{ itemQuantity }}">{{ itemQuantity }}</ion-select-option>
         <ion-select-option class="ion-text-center" value="+1" >Ajouter 1</ion-select-option>
         <ion-select-option class="ion-text-center" value="-1" >Enlever 1</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-label>Total</ion-label>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-card>
+    <ion-card-content class="ion-text-right">
+      Total: {{ (printTotal()) }}€
+    </ion-card-content>
+    <ion-card-content>
+        Lieu de livraison (à choisir):
+        <ion-select interface="action-sheet">
+          <ion-select-option class="ion-text-center" value="gascons" >Bistrot des Gascons</ion-select-option>
+          <ion-select-option class="ion-text-center" value="cafePhare" >Café des Phares</ion-select-option>
+          <ion-select-option class="ion-text-center" value="tulipe" >Le Vert Tulipe</ion-select-option>
+          <ion-select-option class="ion-text-center" value="ruche" >Ruche qui dit Oui</ion-select-option>
+        </ion-select>
+        <ion-text>Date de livraison:{{ this.total }}</ion-text>
+        <ion-text>Vendredi 28 octobre, à partir de 9h</ion-text>
+        <ion-text class="ion-text-right">
+          <ion-button size="small">Valider</ion-button>
+        </ion-text>
+      </ion-card-content>
+  </ion-card>
 </ion-content>

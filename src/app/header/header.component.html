@@ -1,4 +1,4 @@
-    <ion-grid>
+    <ion-grid class="navBar">
         <ion-row>
             <ion-col>
                 <ion-button ion-button class="ion-text-right" size="small" fill="clear" color="primary" (click)="goHome()">
@@ -6,7 +6,9 @@
                 </ion-button>
             </ion-col>
             <ion-col class="ion-text-right" >
-                <ion-button  size="small" fill="clear" color="primary" (click)="goCart()">Panier</ion-button>
+                <ion-button  size="small" fill="clear" color="primary" (click)="goCart()">
+                    <ion-img class="iconMenu" src="../assets/images/cartLogo.png"></ion-img>
+                </ion-button>
             </ion-col>
         </ion-row>
     </ion-grid>

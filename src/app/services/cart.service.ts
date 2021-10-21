@@ -25,13 +25,6 @@ setQuantity(produit: any,newQuantity: any){
     return this.cart;
   }
 
-  prixProduit(produit: any){
-    let quantite = produit.quantity;
-    let prix = produit.produit.price;
-    let prixFinal = quantite*prix;
-    return quantite+'x'+prix+'€='+prixFinal+'€';
-  }
-
   addProduct(produit: any){
     console.log(produit); 
     let added = false;
@@ -61,6 +54,19 @@ setQuantity(produit: any,newQuantity: any){
     }  
   }
 
-  
+  prixProduit(produit: any){
+    let quantite = produit.quantity;
+    let prix = produit.produit.price;
+    let prixFinal = quantite*prix;
+    return prixFinal;
+  }
+
+  getTotalCart(){
+    let total = 0;
+    for (let p of this.cart) {
+      total += this.prixProduit(p);
+    }
+return total;
+  }
 
 }

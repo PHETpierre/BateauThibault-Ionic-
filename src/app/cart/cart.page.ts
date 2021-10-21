@@ -8,6 +8,7 @@ import { NavController, NavParams } from '@ionic/angular';
 })
 export class CartPage implements OnInit {
   cart: any;
+  total: any;
 
   constructor(private cartService: CartService) {}
 
@@ -27,8 +28,17 @@ quantityNumber(number: number){
   return numberList;
 }
 
+printTotal(){
+  return this.cartService.getTotalCart();
+}
+
   printPrice(produit: any){
-  return this.cartService.prixProduit(produit);
+    let quantite = produit.quantity;
+    let prix = produit.produit.price;
+  let prixFinal = this.cartService.prixProduit(produit);
+  
+  return quantite+'x'+prix+'€='+prixFinal+'€';
+
   }
 
   changeQuantity($event,produit: any){
