@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { StorePageRoutingModule } from './store-routing.module';
+import { CartPageRoutingModule } from './cart-routing.module';
 
-import { StorePage } from './store.page';
+import { CartPage } from './cart.page';
+import { CartService } from '../services/cart.service';
 import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
@@ -14,8 +15,9 @@ import { HeaderComponent } from '../header/header.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    StorePageRoutingModule
+    CartPageRoutingModule
   ],
-  declarations: [StorePage,HeaderComponent]
+  declarations: [CartPage,HeaderComponent],
+  providers: [CartService]
 })
-export class StorePageModule {}
+export class CartPageModule {}

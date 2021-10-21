@@ -18,4 +18,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/home']);
   }
 
+  goCart(){
+    this.router.navigate(['/cart']);
+  }
+
 }

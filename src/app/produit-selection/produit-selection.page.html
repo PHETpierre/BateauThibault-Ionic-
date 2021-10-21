@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-start">
+        <button ion-button (click)="goBack()">Retour</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-text>Choissisez vos produits</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list padding>
+    <ion-item ion-item *ngFor="let item of details">
+        <ion-button (click)="this.cartService.addProduct(item)">
+          {{item.name}}
+        </ion-button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

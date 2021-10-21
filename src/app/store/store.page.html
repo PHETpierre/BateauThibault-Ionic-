@@ -1,9 +1,48 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>store</ion-title>
+    <app-header title="Store"></app-header>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        Choissisez vos produits
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="large" class="saleProductCategoryButton" color="light" (click)="onGoToSelectProducts('poissons')">
+          <ion-img src="../../assets/images/poulpe.png" slot="start" class="saleProductIcon"></ion-img>
+          <ion-label>Poissons</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="large" class="saleProductCategoryButton" color="light" (click)="onGoToSelectProducts('coquillages')">
+          <ion-img src="../../assets/images/poulpe.png" slot="start" class="saleProductIcon"></ion-img>
+          <ion-label>Coquillages</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="large" class="saleProductCategoryButton" color="light" (click)="onGoToSelectProducts('crustaces')">
+          <ion-img src="../../assets/images/poulpe.png" slot="start" class="saleProductIcon"></ion-img>
+          <ion-label>Crustacés</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="large" class="saleProductCategoryButton" color="light" (click)="onGoToSelectProducts('promotions')">
+          <ion-img src="../../assets/images/poulpe.png" slot="start" class="saleProductIcon"></ion-img>
+          <ion-label>Promotions</ion-label>
+        </ion-button>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
