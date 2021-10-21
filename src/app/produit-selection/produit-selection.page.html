@@ -19,7 +19,7 @@
   </ion-grid>
   <ion-list padding>
     <ion-item ion-item *ngFor="let item of details">
-        <ion-button (click)="this.cartService.addProduct(item)">
+        <ion-button (click)="addToCart(item)">
           {{item.name}}
         </ion-button>
     </ion-item>

@@ -32,5 +32,4 @@ export class BateauPage implements OnInit {
     this.router.navigate(['/details-produit'],navigationExtras);
   }
 }
-
 }

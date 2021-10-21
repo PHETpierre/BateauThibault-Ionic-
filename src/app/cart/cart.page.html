@@ -5,16 +5,29 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-text>Choissisez vos produits</ion-text>
+    </ion-col>
+  </ion-row>
+</ion-grid>
   <ion-list padding>
-    <ion-item ion-item>
-      <ion-button (click)="onee()">
-        aaa
-      </ion-button>
-  </ion-item>
-    <ion-item ion-item>
-        <ion-button (click)="onee()">
-a 
-       </ion-button>
+    <ion-item ion-item *ngFor="let item of this.cart" class="cartItem">
+      <ion-label>{{ item.produit.name }}</ion-label>
+      <ion-label>{{ printPrice(item) }}</ion-label>
+      <ion-select interface="action-sheet" (ionChange)="changeQuantity($event,item.produit)" >
+        <ion-select-option class="ion-text-center" *ngFor="let itemQuantity of quantityNumber(5)" value="{{ itemQuantity }}">{{ itemQuantity }}</ion-select-option>
+        <ion-select-option class="ion-text-center" value="+1" >Ajouter 1</ion-select-option>
+        <ion-select-option class="ion-text-center" value="-1" >Enlever 1</ion-select-option>
+      </ion-select>
     </ion-item>
   </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>Total</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

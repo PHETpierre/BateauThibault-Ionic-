@@ -8,7 +8,6 @@ import { ProduitSelectionPageRoutingModule } from './produit-selection-routing.m
 
 import { ProduitSelectionPage } from './produit-selection.page';
 import { HeaderComponent } from '../header/header.component';
-import { CartService } from '../services/cart.service';
 
 @NgModule({
   imports: [
@@ -18,7 +17,6 @@ import { CartService } from '../services/cart.service';
     ProduitSelectionPageRoutingModule
   ],
   declarations: [ProduitSelectionPage,HeaderComponent],
-  providers: [CartService]
   
 })
 export class ProduitSelectionPageModule {}

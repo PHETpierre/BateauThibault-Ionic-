@@ -25,6 +25,10 @@ export class ProduitSelectionPage implements OnInit {
    this.cart = this.cartService.getCart();
   }
 
+addToCart(produit: any){
+  this.cartService.addProduct(produit);
+}
+
   goBack(){
     this.router.navigate(['/store']);
   }

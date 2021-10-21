@@ -12,18 +12,38 @@ export class CartPage implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit() {
-    this.cartService.ob.subscribe((result) => {
-      this.foo(result);
-    }
-  );  }
-
-  getCart(){
-    console.log(this.cartService.cart);
     this.cart = this.cartService.cart;
   }
 
-  foo(result:any)
-  {
-    //access result here
+  printCart(){
+    console.log(this.cart);
   }
+
+quantityNumber(number: number){
+  let numberList = [];
+  for (let i = 0; i < number; i++) {
+    numberList.push(i);
+  }
+  return numberList;
+}
+
+  printPrice(produit: any){
+  return this.cartService.prixProduit(produit);
+  }
+
+  changeQuantity($event,produit: any){
+    if($event.detail.value === "-1" ){
+      this.cartService.removeOneProduct(produit)
+    }
+    else if ($event.detail.value === "+1" ){
+        this.cartService.addProduct(produit);
+    }
+
+    else{
+      this.cartService.setQuantity(produit,$event.detail.value)
+    }
+    console.log($event);
+  }
+
+
 }
