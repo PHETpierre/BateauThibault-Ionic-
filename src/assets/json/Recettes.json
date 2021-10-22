@@ -4,7 +4,7 @@
       "name": "Homard",
       "image": "../assets/images/homardRecette@3x.png",
       "icon": "../assets/images/homardRecette_icon.png",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "description": "Faire cuire les homards dans de l'eau bouillante avec du thym, du l'aurier, du sel et du poivre de Cayenne. Decoupez dans le sens de la longueur. Melangez la mayonnaise avec le Cognac, le corail et la ciboulette.",
       "category": "recettes"
   },
   {
@@ -12,15 +12,15 @@
       "name": "St jacques",
       "image": "../assets/images/saintJacques@3x.png",
       "icon": "../assets/images/saintJacques_icon.png",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "description": "Faire fondre du beurre avec des echalotes",
       "category": "recettes"
   },
   {
       "id": 2,
-      "name": "Bar",
+      "name": "Bar rôti au laurier fin",
       "image": "../assets/images/barRecette@3x.png",
       "icon": "../assets/images/barRecette_icon.png",
-      "description": "Qu'il est chaud le soleil  Quand nous sommes en vacances  Y a d'la joie, des hirondelles  C'est le sud de la France  Papa bricole au garage Maman lit dans la chaise longue  Dans ce joli paysage Moi, je me balade en tongs  Que de bonheur! Que de bonheur!",
+      "description": "Sur une plaque ou un plat allant au four, disposer quelques feuilles de laurier frais, verser un fillet d'huile d'olive et du gros sel.",
       "category": "recettes"
   },
   {
