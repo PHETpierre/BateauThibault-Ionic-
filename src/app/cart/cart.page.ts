@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
-import { NavController, NavParams } from '@ionic/angular';
+import { AlertController, NavController, NavParams } from '@ionic/angular';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.page.html',
@@ -9,11 +9,12 @@ import { NavController, NavParams } from '@ionic/angular';
 export class CartPage implements OnInit {
   cart: any;
   total: any;
-
-  constructor(private cartService: CartService) {}
+  alert: any;
+  constructor(private alertController: AlertController,private cartService: CartService) {}
 
   ngOnInit() {
     this.cart = this.cartService.cart;
+
   }
 
   printCart(){
@@ -41,6 +42,15 @@ printTotal(){
 
   }
 
+  clearCart(){
+    this.cartService.clearCart();
+    this.cart = this.cartService.cart;
+  }
+
+  removeElement(produit: any){
+      this.cartService.removeAProduct(produit);
+  }
+
   changeQuantity($event,produit: any){
     if($event.detail.value === "-1" ){
       this.cartService.removeOneProduct(produit)
@@ -54,6 +64,21 @@ printTotal(){
     }
     console.log($event);
   }
+
+
+  async showAlert() {
+    let alert = await this.alertController.create({
+      header: 'Envoyer votre commande ?',
+      subHeader: 'Envoyer votre comande de '+this.printTotal()+'€ à Thibault ?',
+      buttons: ['Annuler','OK']
+    });
+
+    await alert.present();
+  }
+
+
+
+
 
 
 }

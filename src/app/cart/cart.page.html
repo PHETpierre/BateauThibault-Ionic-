@@ -1,14 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <app-header title="Cart"></app-header>
-  </ion-toolbar>
-</ion-header>
+    <app-header title="Panier"></app-header>
 
 <ion-content padding [fullscreen]="true">
   <ion-grid>
   <ion-row>
-    <ion-col class="ion-text-center">
+    <ion-col size="9" class="ion-text-right">
       <ion-text>Choissisez vos produits</ion-text>
+    </ion-col>
+    <ion-col class="ion-text-right">
+      <ion-button padding size="small" color="danger" (click)="clearCart()">Vider</ion-button>
     </ion-col>
   </ion-row>
 </ion-grid>
@@ -38,8 +37,8 @@
         <ion-text>Date de livraison:{{ this.total }}</ion-text>
         <ion-text>Vendredi 28 octobre, à partir de 9h</ion-text>
         <ion-text class="ion-text-right">
-          <ion-button size="small">Valider</ion-button>
-        </ion-text>
+          <ion-button ion-item expand="full"  color="dark" (click)="showAlert()" class="cartItem">Valider</ion-button>
+          </ion-text>
       </ion-card-content>
   </ion-card>
 </ion-content>

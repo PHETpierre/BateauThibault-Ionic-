@@ -9,8 +9,7 @@ export class CartService {
 
 cart: any = [];
   
-  constructor() {
-}
+  constructor() {}
 
 setQuantity(produit: any,newQuantity: any){
   for (let p of this.cart) {
@@ -43,7 +42,22 @@ setQuantity(produit: any,newQuantity: any){
     }
   }
 
-  
+
+  removeAProduct(produit: any){
+    for (let p of this.cart) {
+      if (p.produit.id == produit.id) {
+        let del = this.cart.indexOf(p);
+        console.log(del);
+
+        break;
+      }
+    } 
+  }
+
+  clearCart(){
+    this.cart = [];
+  }
+
   removeOneProduct(produit: any){
     for (let p of this.cart) {
       if (p.produit.id == produit.id) {
@@ -51,7 +65,7 @@ setQuantity(produit: any,newQuantity: any){
         p.quantity = quan;
         break;
       }
-    }  
+    } 
   }
 
   prixProduit(produit: any){
