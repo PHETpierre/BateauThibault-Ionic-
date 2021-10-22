@@ -16,6 +16,6 @@ import { HeaderComponent } from '../header/header.component';
     IonicModule,
     CartPageRoutingModule
   ],
-  declarations: [CartPage,HeaderComponent],
+  declarations: [CartPage,HeaderComponent]
 })
 export class CartPageModule {}

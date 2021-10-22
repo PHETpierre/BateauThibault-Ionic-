@@ -1,26 +1,28 @@
-    <app-header title="Panier"></app-header>
-
+  <app-header title="Panier"></app-header>
 <ion-content padding [fullscreen]="true">
   <ion-grid>
-  <ion-row>
-    <ion-col size="9" class="ion-text-right">
-      <ion-text>Cliquez pour modifier la quantité</ion-text>
-    </ion-col>
-    <ion-col class="ion-text-right">
-      <ion-button padding size="small" color="danger" (click)="clearCart()">Vider</ion-button>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+    <ion-row>
+      <ion-col size="9" class="ion-text-right">
+        <ion-text>Cliquez pour modifier la quantité</ion-text>
+      </ion-col>
+      <ion-col class="ion-text-right">
+        <ion-button padding size="small" color="danger" (click)="clearCart()">Vider</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <ion-list padding>
-    <ion-item ion-item *ngFor="let item of this.cart" class="cartItem">
-      <ion-label>{{ item.produit.name }}</ion-label>
-      <ion-label>{{ printPrice(item) }}</ion-label>
-      <ion-select class="QuantitySelect" interface="action-sheet" (ionChange)="changeQuantity($event,item.produit)" >
-        <ion-select-option class="ion-text-center" *ngFor="let itemQuantity of quantityNumber(5)" value="{{ itemQuantity }}">{{ itemQuantity }}</ion-select-option>
-        <ion-select-option class="ion-text-center" value="+1" >Ajouter 1</ion-select-option>
-        <ion-select-option class="ion-text-center" value="-1" >Enlever 1</ion-select-option>
-      </ion-select>
-    </ion-item>
+    <ion-button ion-item color="light" *ngFor="let item of this.cart" (click)="quantityActionSheet(item.produit)" expand="full">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            {{ item.produit.name }}
+          </ion-col>
+          <ion-col>
+            {{ printPrice(item) }}
+          </ion-col>
+        </ion-row>
+      </ion-grid>  
+    </ion-button>
   </ion-list>
   <ion-card>
     <ion-card-content class="ion-text-right">

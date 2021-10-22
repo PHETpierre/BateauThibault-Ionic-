@@ -25,7 +25,6 @@ setQuantity(produit: any,newQuantity: any){
   }
 
   addProduct(produit: any){
-    console.log(produit); 
     let added = false;
     for (let p of this.cart) {
       if (p.produit.id == produit.id) {
@@ -58,11 +57,23 @@ setQuantity(produit: any,newQuantity: any){
     this.cart = [];
   }
 
+
+
+removeFromCart(produit: any){
+  let index = this.cart.findIndex(obj => obj.id == produit.id );
+    this.cart.splice(index, 1);
+}
+
   removeOneProduct(produit: any){
     for (let p of this.cart) {
       if (p.produit.id == produit.id) {
-        let quan =  parseInt(p.quantity) -  1;
-        p.quantity = quan;
+        if(p.quantity > 0 ){ 
+          let quan =  parseInt(p.quantity) -  1;
+          p.quantity = quan;
+        }
+        else{
+
+        }
         break;
       }
     } 
